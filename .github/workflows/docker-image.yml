@@ -29,4 +29,4 @@ jobs:
     - name: Build user service docker image
       run: docker build . --file Dockerfile -t "$DOCKER_USERNAME/$PRODUCT_REPO_NAME:latest"
     - name: Push user service docker image
-      run: docker push "$DOCKER_USERNAME/$PRODUCT_REPO_NAME:0.0.1"
+      run: docker push "$DOCKER_USERNAME/$PRODUCT_REPO_NAME:latest"
